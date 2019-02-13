@@ -1,6 +1,6 @@
 {
   "name": "@giantcz/nette",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Nette helpers.",
   "main": "lib/index.js",
   "private": false,
@@ -19,9 +19,12 @@
     "type": "git",
     "url": "https://github.com/giantcz/nette"
   },
-  "keywords": [],
+  "keywords": [
+    "nette",
+    "helpers",
+    "ajax"
+  ],
   "dependencies": {
-    "babel-regenerator-runtime": "^6.5.0",
     "gia": "0.0.7"
   },
   "devDependencies": {
