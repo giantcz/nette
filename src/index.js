@@ -106,6 +106,9 @@ function processResponse(response) {
     if (response.snippets) {
         replaceSnippets(response.snippets);
     }
+    if (response.redirect) {
+        window.location.href = response.redirect;
+    }
     if (response.url) {
         window.history.replaceState({
                 url: response.url,

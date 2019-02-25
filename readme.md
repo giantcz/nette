@@ -14,6 +14,7 @@ Sends request and automatically processes the response.
 In a JSON response:
 * `snippets` get replaced and [Gia components](https://github.com/giantcz/gia#component) within are initialized 
 * `url` gets replaced in the URL bar with [replaceState](https://developer.mozilla.org/en-US/docs/Web/API/History_API#The_replaceState()_method)
+* `redirect`, when set, redirects page to this URL (hard reload) 
 
 Accepts options object with defaults:
 ```javascript
