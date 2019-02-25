@@ -13,7 +13,6 @@ Sends request and automatically processes the response.
 
 In a JSON response:
 * `snippets` get replaced and [Gia components](https://github.com/giantcz/gia#component) within are initialized 
-* `action` gets triggered in [Gia eventbus](https://github.com/giantcz/gia#eventbus) in a form of `nette:[action string]`
 * `url` gets replaced in the URL bar with [replaceState](https://developer.mozilla.org/en-US/docs/Web/API/History_API#The_replaceState()_method)
 
 Accepts options object with defaults:

@@ -1,4 +1,3 @@
-import eventbus from 'gia/eventbus';
 import loadComponents from 'gia/loadComponents';
 import removeComponents from 'gia/removeComponents';
 import config from 'gia/config';
@@ -104,9 +103,6 @@ export function submit(element) {
 }
 
 function processResponse(response) {
-    if (response.action) {
-        triggerEvent(response.action);
-    }
     if (response.snippets) {
         replaceSnippets(response.snippets);
     }
@@ -151,10 +147,6 @@ export function replaceSnippet(newContent, snippetName) {
             console.info(`Updated snippet '${ snippetName }'`);
         }
     }
-}
-
-export function triggerEvent(action) {
-    eventbus.emit(`nette:${action}`);
 }
 
 export class Snippet {
@@ -207,7 +199,6 @@ export default {
     handleSubmit: submit,
     replaceSnippets: replaceSnippets,
     replaceSnippet: replaceSnippet,
-    triggerEvent: triggerEvent,
     setComponents: setComponents,
     Snippet: Snippet,
 }

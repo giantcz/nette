@@ -1,6 +1,6 @@
 {
   "name": "@giantcz/nette",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Nette helpers.",
   "main": "lib/index.js",
   "private": false,
